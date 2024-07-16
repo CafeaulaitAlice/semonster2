@@ -22,4 +22,26 @@ public class Player {
     }
   }
 
+  public void main() {
+    System.out.println("Deck:user");
+    for (int i = 0; i < this.deck.size(); i++) {
+      System.out.println(this.deck.get(i).toString());
+    }
+  }
+
+  @Override
+  public String toString() {
+    StringBuilder sb = new StringBuilder();
+    for (Monster m : deck) {
+      sb.append(m.toString()).append("\n");
+    }
+    return sb.toString();
+  }
+
+  public static void main(String[] args) {
+    Player player = new Player();
+    player.drawMonsters();
+    System.out.println(player);
+  }
+
 }
