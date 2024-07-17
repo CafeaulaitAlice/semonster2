@@ -11,7 +11,7 @@ public class Player {
   ArrayList<Monster> deck = new ArrayList<>();
 
   public void drawMonsters() {
-    for (int i = 0; i < 5; i++) {
+    for (int i = 0; i < 8; i++) {
       this.deck.add(new Monster());
     }
   }
