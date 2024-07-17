@@ -21,7 +21,7 @@ public class Monster {
   }
 
   String summonMonster(int mnumber) {
-    String monsters[] = { "スライム", "サハギン", "ドラゴン", "デュラハン", "シーサーペント" };
+    String monsters[] = { "スライム", "サハギン", "ドラゴン", "デュラハン", "シーサーペント", "オーク", "ゴブリン", "デーモン" };
     return monsters[mnumber];
   }
 
