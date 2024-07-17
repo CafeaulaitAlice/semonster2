@@ -43,5 +43,4 @@ public class Player {
     player.drawMonsters();
     System.out.println(player);
   }
-
 }
