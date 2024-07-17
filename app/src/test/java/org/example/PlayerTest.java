@@ -8,12 +8,7 @@ import static org.junit.Assert.assertTrue;
 import org.junit.Test;
 
 public class PlayerTest {
-  @Test
-  public void testDrawMonsters() {
-    Player player = new Player();
-    player.drawMonsters();
-    assertEquals(8, player.deck.size());
-  }
+  
 
   @Test
   public void testToString() {
@@ -28,4 +23,16 @@ public class PlayerTest {
       assertTrue(line.matches(".+:レア度\\[\\d\\]"));
     }
   }
+
+  @Test
+    public void testDrawMonsters() {
+      Player player = new Player();
+        // drawMonstersメソッドを呼び出す
+        player.drawMonsters();
+
+        // デッキに8つのMonsterオブジェクトが追加されていることを確認
+        assertEquals(8, player.deck.size());
+
+        
+    }
 }
