@@ -12,7 +12,7 @@ public class PlayerTest {
   public void testDrawMonsters() {
     Player player = new Player();
     player.drawMonsters();
-    assertEquals(5, player.deck.size());
+    assertEquals(8, player.deck.size());
   }
 
   @Test
@@ -23,7 +23,7 @@ public class PlayerTest {
     assertNotNull(deckString);
     assertFalse(deckString.isEmpty());
     String[] lines = deckString.split("\n");
-    assertEquals(5, lines.length);
+    assertEquals(8, lines.length);
     for (String line : lines) {
       assertTrue(line.matches(".+:レア度\\[\\d\\]"));
     }
